@@ -24,11 +24,11 @@ The provided example is [this CodePen](https://codepen.io/freeCodeCamp/full/zNBO
 
 ## What do we do about this
 
-**WebDev sucks and so do we.** It's all trying to fit together a shit ton of different bits and pieces each working differently and half of them just copied from someone else's work without stopping to think how it's actually working. It feels like being a raccoon on a dumpster trying to assemble a moving car from pizza boxes and broken spark plugs.
+**WebDev is scrappy and so are we.** It's all trying to fit together a ton of different bits and pieces each working differently and many of them just copied from someone else's work without fully understanding how it's actually working. It feels like being a raccoon on a dumpster trying to assemble a moving car from pizza boxes and broken spark plugs.
 
-So let's do just that. **Let's build a punk-ass portfolio for a raccoon that builds shit using scavenged trash and nothing works but god damnit at least we made it.** It will have the worst colors, the ugliest type and will be like a spit in the eye of god.
+So let's do just that. **Let's build a punk-ass portfolio for a raccoon that builds stuff using scavenged trash and he's not sure why it works but god damnit he made it.** It will have the worst colors, the ugliest type and will be like a spit in the eye of god.
 
-BUT it will have nice, clean code underneath because we can afford to be anal about it. It's so few lines after all.
+BUT it will have nice, clean code underneath because we want to be anal about it.
 
 ## So what are the steps
 
@@ -55,7 +55,7 @@ BUT it will have nice, clean code underneath because we can afford to be anal ab
 - Create the *profile link* on the Contact section, put some text about raccoons too
 - Put a media query for viewports below 600px wide altering the project grid
 
-### Phase 4. Unecessary pain
+### Phase 4. Optional testing and styling
 - Create up to six project tiles to test the grid
 - Play with hover animations on project tiles
 - Play with gradients on the background to make it striped and fugly
