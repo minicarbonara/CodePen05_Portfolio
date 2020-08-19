@@ -34,9 +34,9 @@ BUT it will have nice, clean code underneath because we want to be anal about it
 
 ### Phase 1. Figure out the *a e s t h e t h i c*
 - Check out [stuff](https://artsqool.cool/) [that looks](https://www.shopsludgelife.com/) [or feels](http://donutcounty.com/) [like we are](https://knowyourmeme.com/memes/subcultures/jet-set-radio) [looking for](https://hotlinemiami.com/gate)
-- Check out colour palette webpages for a color selection
-- Check out Google Fonts for a Header and Paragraph font pairing, plus one for quotes or something
-- Draw out a crude wireframe of the site's structure
+- Check out [colour palette webpages](https://www.colourlovers.com/) for a color selection. [This one, for example](https://www.colourlovers.com/palette/55400/Neon_Virus)
+- Check out Google Fonts for a [Header](https://fonts.google.com/specimen/Pangolin) and [Paragraph](https://fonts.google.com/specimen/Fira+Mono) font pairing, plus one for [quotes](https://fonts.google.com/specimen/Swanky+and+Moo+Moo) or something
+- Draw out [a crude wireframe](https://www.dropbox.com/s/dqprdqa6rwjg60r/portfolio_wireframe.jpg?dl=0) of the site's structure
 
 ### Phase 2. Set the basic elements
 - Set the doctype, title, CSS link and such
