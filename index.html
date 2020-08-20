@@ -1,11 +1,69 @@
 
 
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Bienvenides a mi portfolio</title>
+        <title>Welcome to my portfolio. I'm a raccoon.</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Pangolin&family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        
+        <nav id="navbar">
+            <h1 class="site-title">Welcome to my portfolio v3.1</h1>
+            <ul class="navbar-links">
+                <a href="#welcome-section">Welcome</a>
+                <a href="#projects">Projects</a>
+                <a href="#about-contact">About</a>
+                <a href="#sitemap">Sitemap</a>
+            </ul>
+        </nav>
+        <main id="wrapper">
+            <section id="welcome-section">
+                <div class="centered-box">
+                    <h1>This is the welcome message</h1>
+                    <button class="centered-button">Go to portfolio</button>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="project-tile">
+                    <h3 class="project-title">Project name</h3>
+                    <img class="project-thumb" src="" alt="project 1 thumbnail">
+                </div>
+            </section>
+
+            <section id="about-contact">
+                <div id="about-picture">
+                    <img class="bordered-picture" src="" alt="a raccoon in a dumpster">
+                </div>
+                <div id="about-text">
+                    <h2>About me</h2>
+                    <p>Aliquam porta, metus id cursus elementum, ex magna interdum mi, id sollicitudin ligula arcu at lacus. Praesent tortor magna, pharetra sed nulla non, viverra maximus augue. Nullam venenatis tellus turpis, eu fermentum felis luctus ac. Curabitur erat augue, venenatis quis semper sed, placerat ac eros. Duis maximus velit a aliquam venenatis. Sed efficitur scelerisque quam, in aliquet dui viverra eu.</p>
+                    <p class="quote">Lorem ipsum dolor sit amet.</p>
+                    <p>Non efficitur elit. Donec quis semper orci, fermentum pulvinar est. Suspendisse eu velit eget massa malesuada congue non vitae nisi. Ut pellentesque euismod suscipit. Vestibulum porta nulla non tincidunt fermentum.</p>
+                </div>
+                <ul id="about-links">
+                    <li><a id="profile-link" href="#" target="_blank">A profile link</a></li>
+                    <li><a id="another-link" href="#" target="_blank">Another link</a></li>
+                    <li><a id="yet-another-link" href="#" target="_blank">Yet another link</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div id="sitemap">
+                <h3>Sitemap</h3>
+                <ul class="sitemap-links">
+                    <a href="#welcome-section">Welcome</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about-contact">About</a>
+                    <a href="#sitemap">Sitemap</a>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p class="smalltext">©2020 some raccoon in a dumpster. No rights reserved. I mean, what were you expecting.</p>
+            </div>
+            <div id="footerlogo"><!-- LOGO WILL BE DIV'S BG IMAGE--></div>
+        </footer>
     </body>
 </html>
+

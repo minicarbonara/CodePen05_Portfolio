@@ -1,7 +1,67 @@
 /*
+    //FONTS AND FALLBACKS
     font-family: 'Fira Mono', monospace;
-
     font-family: 'Pangolin', cursive;
-
     font-family: 'Swanky and Moo Moo', cursive;
+
+    //COLORS: https://www.colourlovers.com/palette/55400/Neon_Virus
+    Hot pink: #FF0092;
+    Orange: #FFCA1B;
+    Lime: #B6FF00;
+    Blue: #228DFF;
+    Purple: #BA01FF;
 */
+
+:root {
+    --neon-hot-pink: #FF0092;
+    --neon-orange: #FFCA1B;
+    --neon-lime: #B6FF00;
+    --neon-blue: #228DFF;
+    --neon-purple: #BA01FF;
+    --window-gray: #DCDCDC;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: var(--window-gray);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Mono', monospace;
+  }
+
+#navbar {
+    font-size: 80%;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#wrapper {
+    /* width: 100%; */
+    padding: 5px 20px 5px 20px;
+    margin: 0px 5px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #EEE;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Pangolin', cursive;
+  }
+
+.quote {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 200%;
+    line-height: 100%;;
+    margin: -5px auto -5px auto;
+    padding: 0px;
+  }
