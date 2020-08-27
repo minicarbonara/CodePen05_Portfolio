@@ -1,0 +1,273 @@
+/*
+  //FONTS AND FALLBACKS
+    font-family: 'Fira Mono', monospace;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Swanky and Moo Moo', cursive;
+
+  //COLORS: https://www.colourlovers.com/palette/55400/Neon_Virus
+    Hot pink: #FF0092;
+    Orange: #FFCA1B;
+    Lime: #B6FF00;
+    Blue: #228DFF;
+    Purple: #BA01FF;
+*/
+
+:root {
+  --neon-hot-pink: #FF0092;
+  --neon-orange: #FFCA1B;
+  --neon-lime: #B6FF00;
+  --neon-blue: #228DFF;
+  --neon-purple: #BA01FF;
+  --window-gray: #DCDCDC;
+
+  font-size: 62.5%; /*default font-size to 10px to use rem as spacing unit*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--window-gray);
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Fira Mono', monospace;
+}
+
+#navbar {
+  background-color: var(--window-gray);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 0 -0.5rem 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 2;
+}
+
+.site-title {
+  text-align: center;
+  font-family: 'Fira Mono', monospace;
+  color: #FFF;
+  background-color: var(--neon-blue);
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  margin: 0;
+  /* highlights and shadows in rgba in case I change the base color later */
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.navbar-links > a {
+  color: #333;
+}
+
+/* WRAPPER AND GENERAL TEXT STYLES*/
+
+#wrapper {
+  /* width: 100%; */
+  padding: 0;
+  margin: 0 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.7); /* shadows in rgba in case I change the base color later */
+  border-left: 1px solid rgba(0, 0, 0, 0.7);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  background-color: #EEE;
+
+  font-size: 1.6rem; /*Restoring text-size to default 16px*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Pangolin', cursive;
+  line-height: 1em;
+}
+
+.quote {
+  font-family: 'Swanky and Moo Moo', cursive;
+  font-size: 2em;
+  line-height: 1em;
+  margin: -0.5rem auto -0.5rem auto;
+  padding: 0;
+}
+
+.smalltext{
+  font-size: 1rem;
+}
+
+/* WELCOME SECTION STYLES*/
+
+#welcome-section {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--neon-hot-pink);
+}
+
+.centered-box {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 8rem;
+  color: var(--neon-lime);
+}
+
+.centered-button {
+  font-size: 2rem;
+  font-family: 'Fira Mono', monospace;
+}
+
+/* PROJECTS SECTION STYLES*/
+
+#projects {
+  background-color: var(--neon-orange);
+  margin: 0;
+  padding: 4rem 0 10rem 0;
+}
+
+.centered-title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.projects-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-tile {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7); /* shadows in rgba in case I change the base color later */
+  border-right: 1px solid rgba(0, 0, 0, 0.7);
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  background-color: var(--window-gray);
+  margin: 1rem auto;
+  width: 30rem;
+  height: 22rem;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+  text-align: center;
+  font-family: 'Fira Mono', monospace;
+  color: #FFF;
+  background-color: var(--neon-blue);
+  font-size: 1.4rem;
+  padding: 0.2em;
+  margin: 0;
+  /* highlights and shadows in rgba in case I change the base color later */
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.project-thumb {
+  height: auto;
+  width: 100%;
+  background-color: var(--neon-purple);
+  margin: 0 auto
+  max-width: 100%;
+  border 1px aqua;
+}
+
+/* ABOUT SECTION STYLES*/
+
+#about-contact {
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: var(--neon-purple);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 3rem;
+  grid-template-areas: 'ab-image ab-text' 'ab-image ab-links';
+  color: var(--neon-lime);
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 40rem;
+  grid-area: ab-image;
+  margin: 0 auto;
+}
+
+.bordered-picture {
+  width: inherit;
+  border: 1rem solid #EEE;
+  box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+#about-text {
+  grid-area: ab-text;
+}
+
+#about-links {
+  grid-area: ab-links;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bolder;
+}
+
+/* FOOTER STYLES*/
+
+#site-footer {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sitemap {
+
+}
+
+.sitemap-links{
+
+}
+
+#copyright {
+  justify-self: center;
+  align-self: center;
+}
+
+#footerlogo{
+
+}
+
+@media (max-width:600px) {
+  :root {
+    font-size: 50%;
+  }
+  #about-contact {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    grid-template-areas: 'ab-text' 'ab-image' 'ab-links';
+  }
+}
