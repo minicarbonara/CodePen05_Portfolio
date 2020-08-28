@@ -21,6 +21,7 @@
   --window-gray: #DCDCDC;
 
   font-size: 62.5%; /*default font-size to 10px to use rem as spacing unit*/
+  scroll-behavior: smooth;
 }
 
 * {
@@ -162,8 +163,8 @@ h6 {
   border-top: 2px solid white;
   background-color: var(--window-gray);
   margin: 1rem auto;
-  width: 30rem;
-  height: 22rem;
+  width: 34rem;
+  height: 28rem;
   text-align: center;
   overflow: hidden;
   box-shadow: 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
@@ -187,7 +188,7 @@ h6 {
 .project-thumb {
   height: auto;
   width: 100%;
-  background-color: var(--neon-purple);
+  background-color: var(--neon-purple); /*Color box in case of missing image*/
   margin: 0 auto
   max-width: 100%;
   border 1px aqua;
@@ -244,12 +245,9 @@ h6 {
   justify-content: space-between;
 }
 
-#sitemap {
-
-}
-
-.sitemap-links{
-
+.sitemap-links {
+  text-decoration: none;
+  color: #666;
 }
 
 #copyright {
@@ -257,13 +255,19 @@ h6 {
   align-self: center;
 }
 
-#footerlogo{
+#footerlogo {
+  height: 5rem;
+  width: 5rem;
+  background-image: url("https://i.postimg.cc/3wQ9DKzP/raccoon.png");
+  background-repeat: no-repeat;
+  background-size: 4.5rem;
+  align-self: center;
 
 }
 
 @media (max-width:600px) {
   :root {
-    font-size: 50%;
+    font-size: 50%; /*Reduced from usual 62,5. Resizes most things on screen.*/
   }
   #about-contact {
     grid-template-columns: 1fr;
